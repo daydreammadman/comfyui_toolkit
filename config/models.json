@@ -1,0 +1,60 @@
+{
+  "modelscope": {
+    "text_to_image": [
+      "Tongyi-MAI/Z-Image-Turbo",
+      "Qwen/Qwen-Image",
+      "MAILAND/majicflus_v1",
+      "zhangquanhao/qwen-image-realistic-portrait"
+
+
+    ],
+    "llm": [
+      "deepseek-ai/DeepSeek-R1-0528",
+      "Qwen/Qwen2.5-14B-Instruct",
+      "Qwen/Qwen2.5-32B-Instruct",
+      "ZhipuAI/chatglm3-6b",
+      "THUDM/glm-4-9b-chat",
+      "deepseek-ai/DeepSeek-V2.5",
+      "01ai/Yi-1.5-9B-Chat",
+      "Baichuan2-13B-Chat"
+    ],
+    "vlm": [
+      "OpenGVLab/InternVL2-8B",
+      "Qwen/Qwen2-VL-7B-Instruct",
+      "Qwen/Qwen2-VL-2B-Instruct",
+      "OpenGVLab/InternVL2-26B",
+      "THUDM/cogvlm2-llama3-chat-19B"
+    ]
+  },
+  "local": {
+    "text_to_image": [
+      "Qwen/Qwen-Image-Edit-2509",
+      "Qwen/Qwen-Image-Edit",
+      "Qwen/Qwen-Image"
+
+    ],
+    "llm": [
+      "gemini-2.5-flash",
+      "gemini-2.5-pro",
+
+      "gemini-3-pro-low",
+      "gemini-3-pro-high",
+
+      "gpt-4.1-mini",
+      "gpt-4.1-nano",
+      "gpt-4o-mini",
+
+      "claude-sonnet-4-5",
+      "claude-opus-4-5-thinking",
+
+      "glm-4.5-air",
+      "glm-4.5",
+      "glm-4.6"
+    ],
+    "vlm": [
+      "qwen2-vl-7b-instruct",
+      "internvl2-8b",
+      "llava-v1.6-vicuna-7b"
+    ]
+  }
+}
