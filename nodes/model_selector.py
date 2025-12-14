@@ -33,6 +33,28 @@ class ModelScopeT2ISelector:
         return (model,)
 
 
+class ModelScopeImageEditSelector:
+    """魔塔社区 - 图像编辑模型选择器"""
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        models = config_loader.get_model_list("modelscope", "image_edit", force_reload=True)
+        return {
+            "required": {
+                "model": (models, {"default": models[0] if models else ""}),
+            }
+        }
+
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("model_name",)
+    FUNCTION = "select_model"
+    CATEGORY = "Tomoto's Tools/Models/ModelScope"
+
+    def select_model(self, model):
+        print(f"[ModelScopeImageEdit] Selected model: {model}")
+        return (model,)
+
+
 
 # ========== 本地模型选择器 ==========
 

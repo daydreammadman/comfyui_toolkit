@@ -70,6 +70,7 @@ comfyui_toolkit/
 从配置文件中选择魔塔社区的模型，支持：
 
 - **模型选择器-魔塔文生图** (`ModelScopeT2ISelector`)
+- **模型选择器-魔塔图像编辑** (`ModelScopeImageEditSelector`)
 - **模型选择器-魔塔LLM** (`ModelScopeLLMSelector`)
 - **模型选择器-魔塔VLM** (`ModelScopeVLMSelector`)
 
@@ -103,6 +104,33 @@ comfyui_toolkit/
 
 ---
 
+### 3. 字符串工具系列
+
+#### 字符串连接 - StringJoin
+
+将两个字符串用换行符连接。
+
+**输入：**
+- `text1`: 第一个字符串（多行文本）
+- `text2`: 第二个字符串（多行文本）
+
+**输出：**
+- `output`: 用换行符连接的字符串
+
+**使用场景：**
+- 合并多段提示词
+- 拼接系统提示和用户输入
+- 组合多个文本片段
+
+#### 其他字符串工具
+
+- **字符串判空** (`StringIsEmpty`) - 判断字符串是否为空
+- **字符串长度** (`StringLength`) - 获取字符串长度
+- **字符串去空格** (`StringTrim`) - 去除首尾或所有空格
+- **字符串条件选择** (`StringConditionalSelector`) - 根据布尔值选择字符串
+
+---
+
 ## 📝 配置文件使用
 
 ### 编辑模型列表
@@ -116,6 +144,10 @@ comfyui_toolkit/
       "AI-ModelScope/stable-diffusion-v1-5",
       "ZhipuAI/CogView3-Plus",
       "Kwai-Kolors/Kolors"
+    ],
+    "image_edit": [
+      "Qwen/Qwen-Image-Edit-2509",
+      "black-forest-labs/FLUX.2-dev"
     ],
     "llm": [
       "Qwen/Qwen2.5-7B-Instruct",
@@ -231,5 +263,5 @@ A: 可以！参考"扩展开发"部分，或直接编辑配置文件。
 ---
 
 **作者**: Tomoto
-**版本**: 2.0.0
-**更新日期**: 2025-12-13
+**版本**: 2.1.0
+**更新日期**: 2025-12-14

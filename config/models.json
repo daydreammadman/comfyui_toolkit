@@ -8,6 +8,10 @@
 
 
     ],
+    "image_edit": [
+      "Qwen/Qwen-Image-Edit-2509",
+      "black-forest-labs/FLUX.2-dev"
+    ],
     "llm": [
       "deepseek-ai/DeepSeek-R1-0528",
       "Qwen/Qwen2.5-14B-Instruct",

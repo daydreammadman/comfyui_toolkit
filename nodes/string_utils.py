@@ -214,3 +214,26 @@ class StringConditionalSelector:
         print(f"[StringConditionalSelector] Output length: {len(result)} chars")
 
         return (result,)
+
+
+class StringJoin:
+    """
+    字符串连接节点
+    将两个字符串用换行符连接
+    """
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "text1": ("STRING", {"multiline": True}),
+                "text2": ("STRING", {"multiline": True}),
+            }
+        }
+
+    RETURN_TYPES = ("STRING",)
+    FUNCTION = "join"
+    CATEGORY = "Tomoto's Tools/Utils"
+
+    def join(self, text1, text2):
+        return (f"{text1}\n{text2}",)

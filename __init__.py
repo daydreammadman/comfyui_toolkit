@@ -7,7 +7,7 @@ ComfyUI Toolkit - ComfyUI 工具集
 from .nodes.logic_router import LogicRouter4, LogicRouter8
 from .nodes.model_selector import (
     ModelScopeT2ISelector,
-
+    ModelScopeImageEditSelector,
     LocalT2ISelector,
     LocalLLMSelector,
 
@@ -31,6 +31,7 @@ from .nodes.string_utils import (
     StringLength,
     StringTrim,
     StringConditionalSelector,
+    StringJoin,
 )
 
 # 节点类映射
@@ -41,6 +42,7 @@ NODE_CLASS_MAPPINGS = {
 
     # 魔塔社区模型选择器
     "ModelScopeT2ISelector": ModelScopeT2ISelector,
+    "ModelScopeImageEditSelector": ModelScopeImageEditSelector,
 
 
     # 本地模型选择器
@@ -67,6 +69,7 @@ NODE_CLASS_MAPPINGS = {
     "StringLength": StringLength,
     "StringTrim": StringTrim,
     "StringConditionalSelector": StringConditionalSelector,
+    "StringJoin": StringJoin,
 }
 
 # 节点显示名称映射
@@ -77,6 +80,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
 
     # 魔塔社区模型选择器
     "ModelScopeT2ISelector": "模型选择器-魔塔文生图",
+    "ModelScopeImageEditSelector": "模型选择器-魔塔图像编辑",
 
 
     # 本地模型选择器
@@ -103,6 +107,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "StringLength": "字符串长度",
     "StringTrim": "字符串去空格",
     "StringConditionalSelector": "字符串条件选择",
+    "StringJoin": "字符串连接",
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']
